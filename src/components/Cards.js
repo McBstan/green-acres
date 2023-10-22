@@ -5,7 +5,7 @@ import './Cards.css';
 function Cards() {
   return (
     <div className='cards'>
-      <h1>Check out these EPIC Yards!</h1>
+      <h1>Check out these EPIC Lawns!</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
@@ -25,7 +25,7 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/img-2.png'
-              text='Weekly or bi-weekly? The lines always looking good!'
+              text='Weekly or bi-weekly? The lines are always looking good!'
               label='Maintenance'
               path='/services'
             />

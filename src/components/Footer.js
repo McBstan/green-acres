@@ -26,8 +26,11 @@ function Footer() {
         </div>
       </section>
       <div class='footer-links'>
+            <div class= 'footer-link-items-header'>
+              <h3>Socials</h3>
+            </div>
         <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
+          {/* <div class='footer-link-items'>
             <h2>About Us</h2>
             <Link to='/sign-up'>How it works</Link>
             <Link to='/'>Testimonials</Link>
@@ -50,14 +53,14 @@ function Footer() {
             <Link to='/'>Ambassadors</Link>
             <Link to='/'>Agency</Link>
             <Link to='/'>Influencer</Link>
-          </div>
-          <div class='footer-link-items'>
-            <h2>Social Media</h2>
-            <Link to='https://instagram.com/blakestanleydg'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
-          </div>
+          </div> */}
+          {/* <div className='footer-link-wrapper'> */}
+            
+            <div class='footer-link-items'>
+              <Link to='https://instagram.com/greenacres_yardcare'>Instagram</Link>
+              <Link to='https://www.facebook.com/GreenAcresYardcare'>Facebook</Link>
+            </div>
+          {/* </div> */}
         </div>
       </div>
       <section class='social-media'>
@@ -67,8 +70,8 @@ function Footer() {
             GreenAcres
             </Link>
           </div>
-          <small class='website-rights'>GreenAcres LawnCare © 2023</small>
-          <div class='social-icons'>
+          <small class='website-rights'>GreenAcres YardCare © 2023</small>
+          {/* <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
               to='/'
@@ -109,7 +112,7 @@ function Footer() {
             >
               <i class='fa-linkedin' />
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
