@@ -20,7 +20,7 @@ function AboutUs() {
       <section className="about-us">
         <h2>Our Story</h2>
         <p>
-          Welcome to GreenAcres Yardcare, your trusted partner for all your lawn and garden maintenance needs. We have been serving the local community for 4 years, and our passion for creating beautiful outdoor spaces is unmatched.
+          Welcome to GreenAcres Yardcare, your trusted partner for all your lawn and garden maintenance needs. We have been serving the Middle TN for 4 years, and our passion for creating beautiful outdoor spaces is unmatched.
         </p>
 
         <h2>Our Mission</h2>

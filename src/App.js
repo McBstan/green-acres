@@ -8,6 +8,7 @@ import Aboutus from './components/pages/Aboutus';
 import SignUp from './components/pages/SignUp';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
+import NotFound from './components/pages/NF';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/products' element ={<Products/>} />
         <Route path='/aboutus' element ={<Aboutus/>} />
         <Route path='/sign-up' element ={<SignUp/>} />
+        <Route path='*' element ={<NotFound/>} />
       </Routes>
     </Router>
     </>
