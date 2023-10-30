@@ -70,7 +70,7 @@ function Footer() {
             GreenAcres
             </Link>
           </div>
-          <small class='website-rights'>GreenAcres YardCare © 2023</small>
+          <small class='website-rights'>GreenAcres Yardcare © 2023</small>
           {/* <div class='social-icons'>
             <Link
               class='social-icon-link facebook'

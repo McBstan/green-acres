@@ -13,13 +13,13 @@ function Cards() {
               src='images/img-1.png'
               text='We make elegance in your backyard!'
               label='Landscaping'
-              path='/services'
+              path='/sign-up'
             />
             <CardItem
               src='images/img-4.png'
               text='Beautiful Christmas Lights starting in October!'
               label='Lighting'
-              path='/services'
+              path='/sign-up'
             />
           </ul>
           <ul className='cards__items'>
@@ -27,13 +27,13 @@ function Cards() {
               src='images/img-2.png'
               text='Weekly or bi-weekly? The lines are always looking good!'
               label='Maintenance'
-              path='/services'
+              path='/sign-up'
             />
             <CardItem
               src='images/img-5.png'
               text='Create the patio of your dreams!'
               label='Hardscape'
-              path='/products'
+              path='/sign-up'
             />
             <CardItem
               src='images/img-3.png'

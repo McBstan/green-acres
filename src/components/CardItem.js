@@ -19,6 +19,7 @@ function CardItem(props) {
         </Link>
       </li>
     </>
+    
   );
 }
 

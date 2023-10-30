@@ -4,6 +4,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from './components/pages/Home';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
+import Aboutus from './components/pages/Aboutus';
 import SignUp from './components/pages/SignUp';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/home" element={<Home/>} />
         <Route path='/services' element ={<Services/>} />
         <Route path='/products' element ={<Products/>} />
+        <Route path='/aboutus' element ={<Aboutus/>} />
         <Route path='/sign-up' element ={<SignUp/>} />
       </Routes>
     </Router>

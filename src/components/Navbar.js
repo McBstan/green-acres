@@ -47,9 +47,14 @@ function Navbar() {
                                 Services
                             </Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
                                 Products
+                            </Link>
+                        </li> */}
+                        <li>
+                            <Link to='/aboutus' className='nav-links' onClick={closeMobileMenu}>
+                                About Us
                             </Link>
                         </li>
                         <li>
