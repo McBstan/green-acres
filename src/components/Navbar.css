@@ -106,7 +106,7 @@
   
     .nav-links {
       text-align: center;
-      padding: 2rem;
+      padding: 4rem;
       width: 100%;
       display: table;
     }
@@ -153,5 +153,10 @@
       background: #fff;
       color: #242424;
       transition: 250ms;
+    }
+
+    .list-top{
+      vertical-align: top;
+      text-align: center;
     }
   }
