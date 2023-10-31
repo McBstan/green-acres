@@ -37,12 +37,12 @@ function Navbar() {
                       <FontAwesomeIcon icon={click ?  faXmark : faBars}></FontAwesomeIcon>
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>   
-                        <li className='list-top'>
+                        <li>
                             <Link to='/home' className='nav-links' onClick={closeMobileMenu}>
                                 Home
                             </Link>
                         </li>
-                        <li className='list-top'>
+                        <li>
                             <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
                                 Services
                             </Link>
@@ -52,12 +52,12 @@ function Navbar() {
                                 Products
                             </Link>
                         </li> */}
-                        <li className='list-top'>
+                        <li>
                             <Link to='/aboutus' className='nav-links' onClick={closeMobileMenu}>
                                 About Us
                             </Link>
                         </li>
-                        <li className='list-top' marginbottom = '200px'>
+                        <li>
                             <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
                                 Request Quote
                             </Link>
