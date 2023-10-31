@@ -1,15 +1,36 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Yardcare",
+  "name": "Green Acres Yardcare",
+  "description": "Your trusted partner for lawn care and landscaping services in Franklin, TN.",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "sizes": "192x192",
+      "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#00a661",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "en-US",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "dir": "ltr",
+  "categories": ["landscaping", "gardening","yardcare","maintenance"],
+  "screenshots": [
+    {
+      "src": "images/img-2.png",
+      "sizes": "640x1136",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "images/img-3.png",
+      "sizes": "750x1334",
+      "type": "image/jpeg"
+    }
+  ]
 }
+
