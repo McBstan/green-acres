@@ -5,7 +5,7 @@ import './About.css';
 function AboutUs() {
   return (
     <>
-        <video src='/videos/Grass.mp4' autoPlay loop muted />
+        <video playsInline src='/videos/Grass.mp4' autoPlay loop muted />
       {/* <header>
         <h1>About GreenAcres Yardcare</h1>
         <nav>
