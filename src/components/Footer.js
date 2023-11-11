@@ -14,7 +14,7 @@ function Footer() {
           You can unsubscribe at any time.
         </p>
         <div className='input-areas'>
-          <form>
+          <form name ="contact" method='POST' netlify>
             <input
               className='footer-input'
               name='email'
