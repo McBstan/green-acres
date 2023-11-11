@@ -3,6 +3,29 @@ import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
+let testForm = document.querySelector("#contact form")
+
+testForm.addEventListener('submit',e => {
+  e.preventDefault();
+
+  const formData = new FormData(testForm);
+  fetch(testForm.getAttribute('action'), {
+    method: 'POST',
+    headers: {
+      'Accept' : 'application/x-www-form-urlencoded; charset = UTF-8' ,
+      'Content-Type' : 'application/x-www-form-urlencoded; charset = UTF-8'
+    },
+    body: new URLSearchParams(formData).toString()
+  })
+  .then(() => console.log("Form successfully submitted"))
+  .catch((error) => alert(error));
+});
+
+document
+  .querySelector("form")
+  .addEventListener("submit", handleSubmit);
+
+
 function Footer() {
   return (
     <div className='footer-container'>
@@ -14,7 +37,7 @@ function Footer() {
           You can unsubscribe at any time.
         </p>
         <div className='input-areas'>
-          <form name ="contact" method='POST' netlify>
+          <form name ="contact" method="POST" action="/#contact" netlify>
             <input
               className='footer-input'
               name='email'
