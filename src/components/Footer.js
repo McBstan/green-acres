@@ -32,14 +32,15 @@ function Footer() {
           You can unsubscribe at any time.
         </p>
         <div className='input-areas'>
-          <form name ="contact" method="POST" netlify>
+          <form name ="contact v1" method="POST" data-netlify="true" onSubmit={"submit"}>
+          <input type="hidden" name="form-name" value="contact v1" />
             <input
               className='footer-input'
               name='email'
               type='email'
               placeholder='Your Email'
             />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
+            <Button type="submit" buttonStyle='btn--outline'>Subscribe</Button>
           </form>
         </div>
       </section>
