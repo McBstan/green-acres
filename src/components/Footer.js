@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
 // let testForm = document.querySelector("#contact form")
@@ -40,7 +39,7 @@ function Footer() {
               type='email'
               placeholder='Your Email'
             />
-            <Button type="submit" buttonStyle='btn--outline'>Subscribe</Button>
+            <button type="submit">Subscribe</button>
           </form>
         </div>
       </section>
