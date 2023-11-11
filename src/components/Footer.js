@@ -12,7 +12,7 @@ testForm.addEventListener('submit',e => {
   fetch(testForm.getAttribute('action'), {
     method: 'POST',
     headers: {
-      'Accept' : 'application/x-www-form-urlencoded; charset = UTF-8' ,
+      'Accept' : 'application/x-www-form-urlencoded; charset = UTF-8',
       'Content-Type' : 'application/x-www-form-urlencoded; charset = UTF-8'
     },
     body: new URLSearchParams(formData).toString()
@@ -20,11 +20,6 @@ testForm.addEventListener('submit',e => {
   .then(() => console.log("Form successfully submitted"))
   .catch((error) => alert(error));
 });
-
-document
-  .querySelector("form")
-  .addEventListener("submit", handleSubmit);
-
 
 function Footer() {
   return (
