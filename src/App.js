@@ -8,7 +8,6 @@ import Aboutus from './components/pages/Aboutus';
 import SignUp from './components/pages/SignUp';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
-import NotFound from './components/pages/NotFound';
 
 function App() {
   return (
