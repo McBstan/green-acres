@@ -8,6 +8,7 @@ import Aboutus from './components/pages/Aboutus';
 import SignUp from './components/pages/SignUp';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/sign-up' element ={<SignUp/>} />
         <Route path='/*' element ={<Home/>} />
       </Routes>
+      <Footer/>
     </Router>
     </>
   );

@@ -5,6 +5,7 @@ import './ServicesHero.css';
 
 function ServicesHero() {
   return (
+    <>
     <div className='services-hero-container'>
       <video playsInline src='/videos/Grass.mp4' autoPlay loop muted />
       <h1>Services</h1>
@@ -18,7 +19,10 @@ function ServicesHero() {
           REQUEST QUOTE
         </Button>
       </div> */}
+      <div className="arrow bounce"></div>
     </div>
+    
+    </>
   );
 }
 

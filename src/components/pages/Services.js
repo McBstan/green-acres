@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../App.css';
-import Footer from '../Footer';
 import ServicesHero from '../ServicesHero';
 import Cards from '../Cards';
 
@@ -11,7 +10,6 @@ export default function Services()
         <>
         <ServicesHero/>
         <Cards/>
-        <Footer/>
         </>
     );
 }
