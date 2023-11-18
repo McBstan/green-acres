@@ -8,11 +8,11 @@ import Aboutus from './components/pages/Aboutus';
 import SignUp from './components/pages/SignUp';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
-import Footer from './components/Footer';
+import { ChakraProvider } from '@chakra-ui/react';
 
 function App() {
   return (
-    <>
+    <ChakraProvider>
     <Router>
      <Navbar />
      <ScrollToTop />
@@ -25,9 +25,8 @@ function App() {
         <Route path='/sign-up' element ={<SignUp/>} />
         <Route path='/*' element ={<Home/>} />
       </Routes>
-      <Footer/>
     </Router>
-    </>
+    </ChakraProvider>
   );
 }
 
