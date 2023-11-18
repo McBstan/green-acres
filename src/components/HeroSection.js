@@ -1,4 +1,4 @@
-import React from 'react';
+import {React,useEffect,useRef} from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
