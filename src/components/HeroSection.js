@@ -6,7 +6,7 @@ import './HeroSection.css';
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <video playsInline src='/videos/Lawnmower.mp4' autoPlay loop muted />
+      <video playsInline="true" src='/videos/Lawnmower.mp4' autoPlay loop muted />
       <h1>Achieve Greenness</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>

@@ -12,7 +12,6 @@ import './App.css';
 
 function App() {
   return (
-    <>
     <Router>
      <Navbar />
      <ScrollToTop />
@@ -26,7 +25,6 @@ function App() {
         {/* <Route path='/*' element ={<Home/>} /> */}
       </Routes>
     </Router>
-    </>
   );
 }
 
