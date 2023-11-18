@@ -14,8 +14,9 @@ function HeroSection() {
   }, []);
 
   return (
-    <div className='hero-container'>
-      <video ref={videoRef} playsInline="true" src='/videos/Lawnmower.mp4' autoPlay loop muted />
+    <>
+    <video ref={videoRef} playsInline="true" src='/videos/Lawnmower.mp4' autoPlay loop muted />
+      <div className='hero-container'>
       <h1>Achieve Greenness</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
@@ -28,6 +29,7 @@ function HeroSection() {
         </Button>
       </div>
     </div>
+    </>
   );
 }
 

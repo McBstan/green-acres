@@ -6,8 +6,8 @@ import './ServicesHero.css';
 function ServicesHero() {
   return (
     <>
+    <video playsInline src='/videos/Grass.mp4' autoPlay loop muted />
     <div className='services-hero-container'>
-      <video playsInline src='/videos/Grass.mp4' autoPlay loop muted />
       <h1>Services</h1>
       {/* <p>What are you waiting for?</p>
       <div className='services-hero-btns'>
