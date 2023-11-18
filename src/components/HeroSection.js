@@ -4,9 +4,18 @@ import { Button } from './Button';
 import './HeroSection.css';
 
 function HeroSection() {
+
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(error => console.log('Error playing the video:', error));
+    }
+  }, []);
+
   return (
     <div className='hero-container'>
-      <video playsInline="true" src='/videos/Lawnmower.mp4' autoPlay loop muted />
+      <video ref={videoRef} playsInline="true" src='/videos/Lawnmower.mp4' autoPlay loop muted />
       <h1>Achieve Greenness</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
