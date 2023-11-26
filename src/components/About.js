@@ -1,6 +1,6 @@
 // AboutUs.js
 import React from 'react';
-import './About.css';
+import styles from './About.module.css';
 
 function AboutUs() {
   return (
@@ -17,7 +17,7 @@ function AboutUs() {
         </nav>
       </header> */}
 
-      <section className="about-us">
+      <section className={styles.aboutUs}>
         <h2>Our Story</h2>
         <p>
           Welcome to GreenAcres Yardcare, your trusted partner for all your lawn and garden maintenance needs. We have been serving the Middle TN for 4 years, and our passion for creating beautiful outdoor spaces is unmatched.
@@ -34,18 +34,18 @@ function AboutUs() {
         </p>
       </section>
 
-      <section className="why-choose-us">
+      <section className={styles.whyChooseUs}>
         <h2>Why Choose Us</h2>
-        <div className='why-wrapper'>
-        <div className='cols'></div>
-        <ul className='cols'>
+        <div className={styles.whyWrapper}>
+        <div className={styles.cols}></div>
+        <ul className={styles.cols}>
           <li>Years of experience in lawn care</li>
           <li>Professional and friendly staff</li>
           <li>Customized solutions for your unique needs</li>
           <li>Environmentally friendly practices</li>
           <li>Affordable and competitive pricing</li>
         </ul>
-        <div className='cols'></div>
+        <div className={styles.cols}></div>
         </div>
       </section>
     </>

@@ -1,45 +1,48 @@
 import React from 'react';
 import CardItem from './CardItem';
-import './Cards.css';
+import styles from './Cards.module.css';
 
 function Cards() {
   return (
-    <div className='cards'>
+    <div className={styles.cards}>
       <h1>Check out these EPIC Lawns!</h1>
-      <div className='cards__container'>
-        <div className='cards__wrapper'>
-          <ul className='cards__items'>
+      <div className={styles.cardsContainer}>
+        <div className={styles.cardsWrapper}>
+          {/* First set of cards */}
+          <ul className={styles.cardsItems}>
             <CardItem
               src='images/img-1.png'
               text='We make elegance in your backyard!'
               label='Landscaping'
-              path='/sign-up'
+              path='/signup'
             />
             <CardItem
               src='images/img-4.png'
               text='Beautiful Christmas Lights starting in October!'
               label='Lighting'
-              path='/sign-up'
+              path='/signup'
             />
           </ul>
-          <ul className='cards__items'>
+          
+          {/* Second set of cards */}
+          <ul className={styles.cardsItems}>
             <CardItem
               src='images/img-2.png'
               text='Weekly or bi-weekly? The lines are always looking good!'
               label='Maintenance'
-              path='/sign-up'
+              path='/signup'
             />
             <CardItem
               src='images/img-5.png'
               text='Create the patio of your dreams!'
               label='Hardscape'
-              path='/sign-up'
+              path='/signup'
             />
             <CardItem
               src='images/img-3.png'
               text='Large properties? Our team has you covered!'
               label='Commercial'
-              path='/sign-up'
+              path='/signup'
             />
           </ul>
         </div>

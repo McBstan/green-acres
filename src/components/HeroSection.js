@@ -1,10 +1,8 @@
-import {React,useEffect,useRef} from 'react';
-import '../App.css';
+import React, { useEffect, useRef } from 'react';
 import { Button } from './Button';
-import './HeroSection.css';
+import styles from './HeroSection.module.css'; // Import as a module
 
 function HeroSection() {
-
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -14,22 +12,21 @@ function HeroSection() {
   }, []);
 
   return (
-    <>
-    <video ref={videoRef} playsInline="true" src='/videos/Lawnmower.mp4' autoPlay loop muted />
-      <div className='hero-container'>
-      <h1>Achieve Greenness</h1>
-      <p>What are you waiting for?</p>
-      <div className='hero-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          REQUEST QUOTE
-        </Button>
+    <div>
+      <video ref={videoRef} playsInline={true} src='/videos/Lawnmower.mp4' autoPlay loop muted />
+      <div className={styles.heroContainer}>
+        <h1>Achieve Greenness</h1>
+        <p>What are you waiting for?</p>
+        <div className={styles.heroBtns}>
+          <Button
+            buttonStyle='buttonOutline'
+            buttonSize='buttonLarge'
+          >
+            REQUEST QUOTE
+          </Button>
+        </div>
       </div>
     </div>
-    </>
   );
 }
 

@@ -1,0 +1,50 @@
+.contactSection {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+.contactSection h2 {
+  color: #333;
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.contactSection h3 {
+  color: #333;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.contactSection ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px auto; /* Center the ul */
+  text-align: left; /* Left-align the text within */
+  display: inline-block; /* Make the ul center-align inside its container */
+  max-width: 400px; /* Optional: Set a max-width for better control */
+}
+
+.contactSection li {
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 5px 0;
+}
+
+.contactSection a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.contactSection a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 500px) {
+  .contactSection {
+      width: 60%;
+      margin: 20px auto;
+  }
+}

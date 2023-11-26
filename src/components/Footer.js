@@ -1,137 +1,52 @@
 import React from 'react';
-import './Footer.css';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
-
-// let testForm = document.querySelector("#contact form")
-
-// testForm.addEventListener('submit',e => {
-//   e.preventDefault();
-
-//   const formData = new FormData(testForm);
-//   fetch(testForm.getAttribute('action'), {
-//     method: 'POST',
-//     headers: {
-//       'Accept' : 'application/x-www-form-urlencoded; charset = UTF-8',
-//       'Content-Type' : 'application/x-www-form-urlencoded; charset = UTF-8'
-//     },
-//     body: new URLSearchParams(formData).toString()
-//   })
-//   .then(() => console.log("Form successfully submitted"))
-//   .catch((error) => alert(error));
-// });
+import styles from './Footer.module.css'; // Assuming you use CSS Modules
+import Link from 'next/link';
 
 function Footer() {
   return (
-    <div className='footer-container'>
-      <section className='footer-subscription'>
-        <p className='footer-subscription-heading'>
+    <div className={styles.footerContainer}>
+      <section className={styles.footerSubscription}>
+        {/* Subscription section */}
+        <p className={styles.footerSubscriptionHeading}>
           Join the Landscaping newsletter to receive our best deals
         </p>
-        <p className='footer-subscription-text'>
+        <p className={styles.footerSubscriptionText}>
           You can unsubscribe at any time.
         </p>
-        <div className='input-areas'>
-          <form name ="contact v1" method="POST" data-netlify="true" onSubmit={"submit"}>
-          <input type="hidden" name="form-name" value="contact v1" />
+        <div className={styles.inputAreas}>
+          {/* Form (assuming using Netlify or similar for handling) */}
+          <form name="contact v1" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact v1" />
             <input
-              className='footer-input'
+              className={styles.footerInput}
               name='email'
               type='email'
               placeholder='Your Email'
             />
-            <Button type="submit" buttonStyle='btn--outline'>Subscribe</Button>
+            <Button type="submit" buttonStyle='buttonOutline'>Subscribe</Button>
           </form>
         </div>
       </section>
-      <div class='footer-links'>
-            <div class= 'footer-link-items-header'>
-              <h3>Socials</h3>
-            </div>
-        <div className='footer-link-wrapper'>
-          {/* <div class='footer-link-items'>
-            <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
-          </div>
-          <div class='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
-          </div>
+
+      <div className={styles.footerLinks}>
+        <div className={styles.footerLinkItemsHeader}>
+          <p><strong>Socials</strong></p>
         </div>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
-          </div> */}
-          {/* <div className='footer-link-wrapper'> */}
-            
-            <div class='footer-link-items'>
-              <Link to='https://instagram.com/greenacres_yardcare'>Instagram</Link>
-              <Link to='https://www.facebook.com/GreenAcresYardcare'>Facebook</Link>
-            </div>
-          {/* </div> */}
+        <div className={styles.footerLinkWrapper}>
+          <div className={styles.footerLinkItems}>
+            {/* External Links should still use 'a' tags */}
+            <a href='https://instagram.com/greenacres_yardcare' target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href='https://www.facebook.com/GreenAcresYardcare' target="_blank" rel="noopener noreferrer">Facebook</a>
+          </div>
         </div>
       </div>
-      <section class='social-media'>
-        <div class='social-media-wrap'>
-          <div class='footer-logo'>
-            <Link to='/' className='social-logo'>
-            GreenAcres
-            </Link>
+      <section className={styles.socialMedia}>
+        <div className={styles.socialMediaWrap}>
+          <div>
+            <Link href='/'>GreenAcres</Link>
           </div>
-          <small class='website-rights'>GreenAcres Yardcare © 2023</small>
-          {/* <div class='social-icons'>
-            <Link
-              class='social-icon-link facebook'
-              to='/'
-              target='_blank'
-              aria-label='Facebook'
-            >
-              <i class='fa-brands fa-facebook-f' />
-            </Link>
-            <Link
-              class='social-icon-link instagram'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <i class='fa-brands fa-instagram' />
-            </Link>
-            <Link
-              class='social-icon-link youtube'
-              to='/'
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <i class='fab fa-youtube' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i class='fa-twitter' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i class='fa-linkedin' />
-            </Link>
-          </div> */}
+          <small className={styles.websiteRights}>GreenAcres Yardcare © 2023</small>
         </div>
       </section>
     </div>

@@ -1,0 +1,64 @@
+/* Your CSS file */
+.aboutUs {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .aboutUs h2 {
+    color: #333;
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  
+  .aboutUs p {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.4;
+  }
+  
+  .whyChooseUs {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .whyChooseUs h2 {
+    color: #333;
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  
+  .whyChooseUs ul {
+    list-style-type: disc;
+    text-align: center;
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+  
+  .whyChooseUs li {
+    font-size: 18px;
+    text-align: left;
+    margin: 10px 0;
+    line-height: 1.4;
+  } 
+
+  .whyWrapper
+  {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: 500px)
+  {
+    .cols
+    {
+        width: 33.333%;
+        align-items: center;
+        
+    }
+  }

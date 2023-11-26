@@ -1,26 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
+import styles from './Cards.module.css';
 
 function CardItem(props) {
   return (
-    <>
-      <li className='cards__item'>
-        <Link className='cards__item__link' to={props.path}>
-          <figure className='cards__item__pic-wrap' data-category={props.label}>
-            {/* <img 
-              className='cards__item__img'
-              alt='Travel Image'                //Screen-reader removal
+    <li className={styles.cardsItem}>
+      <Link href={props.path} className={styles.cardsItemLink}>
+          <figure className={styles.cardsItemPicWrap} data-category={props.label}>
+            <img 
+              className={styles.cardsItemImg}
+              alt='Images'
               src={props.src}
-            /> */}
-            <input type="image" className='cards__item__img' img src = {props.src} alt="Travel Image" />
+            />
           </figure>
-          <div className='cards__item__info'>
-            <h5 className='cards__item__text'>{props.text}</h5>
+          <div className={styles.cardsItemInfo}>
+            <h5 className={styles.cardsItemText}>{props.text}</h5>
           </div>
-        </Link>
-      </li>
-    </>
-    
+      </Link>
+    </li>
   );
 }
 

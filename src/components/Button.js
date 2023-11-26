@@ -1,22 +1,10 @@
-// import React from 'react';
-// import './Button.css';
-// import { Link } from 'react-router-dom';
-
-// export function Button() {
-//   return (
-//     <Link to='sign-up'>
-//       <button className='btn'>Sign Up</button>
-//     </Link>
-//   );
-// }
-
 import React from 'react';
-import './Button.css';
-import { Link } from 'react-router-dom';
+import styles from './Button.module.css';
+import Link from 'next/link';
 
-const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
+const STYLES = ['buttonPrimary', 'buttonOutline'];
 
-const SIZES = ['btn--medium', 'btn--large'];
+const SIZES = ['buttonMedium', 'buttonLarge'];
 
 export const Button = ({
   children,
@@ -32,14 +20,14 @@ export const Button = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <Link to='/sign-up' className='btn-mobile'>
-      <button
-        className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-        onClick={onClick}
-        type={type}
-      >
-        {children}
-      </button>
+    <Link href='/signup' passHref className={styles.btnMobile}>
+        <button
+          className={`${styles.button} ${styles[checkButtonStyle]} ${styles[checkButtonSize]}`}
+          onClick={onClick}
+          type={type}
+        >
+          {children}
+        </button>
     </Link>
   );
 };

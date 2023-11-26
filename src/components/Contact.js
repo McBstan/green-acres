@@ -1,14 +1,14 @@
 import React from 'react';
-import './Contact.css';
+import styles from './Contact.module.css';
 
 function Contact() {
   return (
     <>
     <video playsInline src='/videos/Grass.mp4' autoPlay loop muted />
-      <section className="contact-section">
+      <section className={styles.contactSection}>
         <h2>Contact us to get a quote today!</h2>
 
-        <div className="business-hours">
+        <div className={styles.businessHours}>
           <h3>Business Hours</h3>
           <ul>
             <li>Monday: 8:00 AM - 4:00 PM</li>
@@ -21,7 +21,7 @@ function Contact() {
           </ul>
         </div>
 
-        <div className="contact-info">
+        <div className={styles.contactInfo}>
           <h3>Contact Information</h3>
           <p>Phone: <a href="tel:+6157888044">615-788-8044</a></p>
         </div>
