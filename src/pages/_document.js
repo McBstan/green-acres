@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import HeroSection from '../components/HeroSection';
 
 class MyDocument extends Document {
   render() {
@@ -28,6 +29,7 @@ class MyDocument extends Document {
         </Head>
         <body>
           <Main />
+          <HeroSection />
           <NextScript />
           {/* External JS Script */}
         </body>
