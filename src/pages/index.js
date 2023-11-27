@@ -1,6 +1,6 @@
 // pages/index.js
-// pages/index.js
 import Head from 'next/head';
+import HeroSection from '../components/HeroSection';
 
 export default function Home() {
   return (
@@ -25,8 +25,7 @@ export default function Home() {
         <meta property="og:url" content="https://www.greenacresyardcare.com/" />
         </Head>
       <main>
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-        <div id="root"></div>
+        <HeroSection />
       </main>
     </>
   );
