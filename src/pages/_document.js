@@ -23,16 +23,13 @@ class MyDocument extends Document {
         <meta property="og:description" content="Green Acres Yardcare in Franklin, TN offers professional lawn care and landscaping services. We are your trusted partner for maintaining a beautiful and healthy yard. Contact us today for expert lawn care solutions." />
         <meta property="og:url" content="https://www.greenacresyardcare.com/" />
           {/* External CSS file */}
-          <link href="/static/css/main.297332fa.css" rel="stylesheet" />
 
           {/* Open Graph and other meta tags can also go here */}
         </Head>
         <body>
           <Main />
           <NextScript />
-
           {/* External JS Script */}
-          <script defer src="/static/js/main.5a88ceb6.js"></script>
         </body>
       </Html>
     );
