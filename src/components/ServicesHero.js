@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Button } from './Button';
 import styles from './ServicesHero.module.css';
 
 function ServicesHero() {

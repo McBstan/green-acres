@@ -6,15 +6,16 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import { ChakraProvider } from '@chakra-ui/react';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <ChakraProvider>
       <Navbar />
       <ScrollToTop />
       <Component {...pageProps} />
       <Footer />
-    </>
+    </ChakraProvider>
   );
 }
 

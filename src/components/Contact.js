@@ -6,7 +6,7 @@ function Contact() {
     <>
     <video playsInline src='/videos/Grass.mp4' autoPlay loop muted />
       <section className={styles.contactSection}>
-        <h2>Contact us to get a quote today!</h2>
+        <h2>Get a quote today!</h2>
 
         <div className={styles.businessHours}>
           <h3>Business Hours</h3>
@@ -22,9 +22,11 @@ function Contact() {
         </div>
 
         <div className={styles.contactInfo}>
-          <h3>Contact Information</h3>
+          {/* <h3>Call Anytime</h3> */}
           <p>Phone: <a href="tel:+6157888044">615-788-8044</a></p>
         </div>
+
+        
       </section>
     </>
   );

@@ -1,0 +1,51 @@
+.container {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  text-align: center;
+  }
+  
+  .containerSection {
+    background-color: #f4f4f4;
+    padding-left: auto;
+    padding-right: auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    }
+
+  .heading {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .formControl {
+    margin-bottom: 5px;
+  }
+  
+  .input, .textarea {
+    border-color: #242424;
+    border-width: 2px;
+    border-radius: 4px;
+  }
+
+  
+  .inputError {
+    border-color: red.300; /* Error border color */
+  }
+  
+  .formErrorMessage {
+    color: red;
+    font-size: 14px;
+  }
+  
+  @media (min-width: 500px) {
+    .container {
+        width: 60%;
+        margin: 20px auto;
+    }
+  }
+  
