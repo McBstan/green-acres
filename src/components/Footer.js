@@ -4,10 +4,26 @@ import styles from './Footer.module.css'; // Assuming you use CSS Modules
 import Link from 'next/link';
 
 function Footer() {
+  // Function to handle the form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+    const formProps = Object.fromEntries(formData);
+
+    // Post data using fetch to Netlify
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formProps).toString(),
+    })
+    .then(() => console.log('Form successfully submitted'))
+    .catch((error) => alert(error));
+  };
+
   return (
     <div className={styles.footerContainer}>
       <section className={styles.footerSubscription}>
-        {/* Subscription section */}
         <p className={styles.footerSubscriptionHeading}>
           Join the Landscaping newsletter to receive our best deals
         </p>
@@ -15,16 +31,16 @@ function Footer() {
           You can unsubscribe at any time.
         </p>
         <div className={styles.inputAreas}>
-          {/* Form (assuming using Netlify or similar for handling) */}
-          <form name="contact v1" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact v1" />
+          <form name="newsletter-signup" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+            <input type="hidden" name="form-name" value="newsletter-signup" />
             <input
               className={styles.footerInput}
               name='email'
               type='email'
               placeholder='Your Email'
+              required
             />
-            <Button type="submit" buttonStyle='buttonOutline'>Subscribe</Button>
+            <Button buttonStyle='buttonOutline'>Subscribe</Button>
           </form>
         </div>
       </section>
