@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Cards.module.css';
 
 function CardItem(props) {
@@ -7,7 +8,7 @@ function CardItem(props) {
     <li className={styles.cardsItem}>
       <Link href={props.path} className={styles.cardsItemLink}>
           <figure className={styles.cardsItemPicWrap} data-category={props.label}>
-            <img 
+            <Image 
               className={styles.cardsItemImg}
               alt='Images'
               src={props.src}
