@@ -13,7 +13,7 @@ function HeroSection() {
 
   return (
     <div>
-      <video ref={videoRef} playsInline={true} src='/videos/Lawnmower.mp4' autoPlay loop muted />
+      <video ref={videoRef} playsInline={true} src='/videos/LawnmowerOptimized.mp4' autoPlay loop muted />
       <div className={styles.heroContainer}>
         <h1>Achieve Greenness</h1>
         <p>What are you waiting for?</p>
