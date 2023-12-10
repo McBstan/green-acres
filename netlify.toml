@@ -1,6 +1,11 @@
+# netlify.toml
+
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+# Additional custom redirects can go here.
+# Just be careful not to interfere with the Next.js pages and API routes.
+# For example:
 # Redirect from old page to new page permanently (HTTP 301)
 [[redirects]]
   from = "/old-page"
@@ -12,21 +17,3 @@
   from = "/old-directory/*"
   to = "/new-directory/:splat"
   status = 301
-
-# Rewrite a specific path to a Netlify function without changing the URL in the browser (HTTP 200)
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
-
-# Rewrite all paths to the main Netlify function for SSR (catch-all rewrite)
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/___netlify-handler"
-  status = 200
-
-# Serve the index.html file for root requests
-[[redirects]]
-  from = "/"
-  to = "/index.html"
-  status = 200
