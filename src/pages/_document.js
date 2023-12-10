@@ -5,7 +5,6 @@ class MyDocument extends Document {
     return (
         <Html lang="en">
         <Head>
-        <title>GreenAcres Yardcare - Franklin, TN | Lawn Care and Landscaping Services</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
