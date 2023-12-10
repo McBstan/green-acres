@@ -62,7 +62,7 @@ function Footer() {
             placeholder='Your Email'
             required
           />
-          <button type="submit" className={styles.buttonOutline}>Subscribe</button>
+          <button type="submit" className={`${styles.buttonOutline} ${styles.buttonMedium}`}>Subscribe</button>
         </form>
       </div>
       </section>
