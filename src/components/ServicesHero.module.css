@@ -19,7 +19,7 @@
   .arrow {
     position: absolute;
     bottom: 0;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     left: 50%;
     margin-left: -25px;
     width: 50px;
@@ -50,7 +50,7 @@
     align-self: center;
   }
   .arrow {
-    bottom: 20px;
+    bottom: 40px;
     left: 50%;
     width: 45px;
     height: 45px;
@@ -63,7 +63,7 @@
     align-self: center;
   }
   .arrow {
-      bottom: 20px;
+      bottom: 40px;
       left: 50%;
       width: 40px;
       height: 40px;

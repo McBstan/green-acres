@@ -51,10 +51,7 @@ export const config = {
     api: {
       bodyParser: {
         sizeLimit: '1mb', 
-        type: "experimental-background",
+        //type: "experimental-background",
       },
     },
-    // Only add this if you're sure you need to handle this as a background function
-    // type: "experimental-background",
-
 };
