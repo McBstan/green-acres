@@ -40,7 +40,7 @@ function Footer() {
               placeholder='Your Email'
               required
             />
-            <Button buttonStyle='buttonOutline'>Subscribe</Button>
+          <Button type="submit" buttonStyle='buttonOutline'>Subscribe</Button>
           </form>
         </div>
       </section>
