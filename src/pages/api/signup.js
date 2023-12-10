@@ -46,3 +46,14 @@ const handler = async (req, res) => {
 };
 
 export default handler;
+
+export const config = {
+    api: {
+      bodyParser: {
+        sizeLimit: '1mb', // Set limit as needed
+      },
+    },
+    // Only add this if you're sure you need to handle this as a background function
+    // type: "experimental-background",
+
+};
