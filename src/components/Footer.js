@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from './Button';
 import styles from './Footer.module.css'; // Assuming you use CSS Modules
 import Link from 'next/link';
 
@@ -40,7 +39,7 @@ function Footer() {
               placeholder='Your Email'
               required
             />
-          <Button type="submit" buttonStyle='buttonOutline'>Subscribe</Button>
+          <button type="submit" className={styles.buttonOutline}>Subscribe</button>
           </form>
         </div>
       </section>
