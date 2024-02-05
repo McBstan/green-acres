@@ -1,26 +1,16 @@
-// AboutUs.js
 import React from 'react';
 import styles from './About.module.css';
+// import TeamMember from './TeamMember';
 
 function AboutUs() {
   return (
     <>
-        <video playsInline src='/videos/Grass.mp4' autoPlay loop muted />
-      {/* <header>
-        <h1>About GreenAcres Yardcare</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header> */}
+      <video playsInline src='/videos/Grass.mp4' autoPlay loop muted />
 
       <section className={styles.aboutUs}>
         <h2>Our Story</h2>
         <p>
-          Welcome to GreenAcres Yardcare, your trusted partner for all your lawn and garden maintenance needs. We have been serving the Middle TN for 4 years, and our passion for creating beautiful outdoor spaces is unmatched.
+          Welcome to GreenAcres Yardcare, your trusted partner for all your lawn and garden maintenance needs. We have been serving the Middle TN for 5 years, and our passion for creating beautiful outdoor spaces is unmatched.
         </p>
 
         <h2>Our Mission</h2>

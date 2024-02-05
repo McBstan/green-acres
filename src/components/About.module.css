@@ -53,6 +53,68 @@
     flex-direction: row;
   }
 
+  .teamSection {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering the content */
+  }
+
+  .teamSection h2 {
+    color: #333;
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  
+  .teamGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust minmax for card size */
+    gap: 20px; /* Adjust the gap between cards */
+    width: 100%;
+    max-width: 1200px; /* Adjust the max-width as per your design */
+    margin: 0 auto; /* Centering the grid */
+  }
+
+  .teamMember {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content */
+    text-align: center;
+    background-color: #fff; /* Adjust if you want a different background for the cards */
+    padding: 20px; /* Adjust the padding */
+    border-radius: 10px; /* Adjust the border-radius */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow to each card */
+    transition: transform 0.3s ease-in-out; /* Optional: Adds a transition effect on hover */
+  }
+  
+  .teamMember:hover {
+    transform: translateY(-5px); /* Optional: Slight raise effect on hover */
+  }
+
+  .memberPhoto {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%; /* If you want circular images */
+    margin-bottom: 10px;
+    border: 5px solid #f4f4f4; /* Optional: Adds a border around the photo */
+  }
+  
+  .memberName {
+    font-size: 20px; /* Adjust font size as needed */
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  .memberTitle {
+    font-size: 18px;
+    color: #666; /* Adjust color as needed */
+    margin-bottom: 15px;
+  }
+  
   @media (min-width: 500px)
   {
     .cols
@@ -62,3 +124,16 @@
         
     }
   }
+
+  @media (max-width: 768px) {
+    .teamGrid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Smaller minmax for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .teamGrid {
+      grid-template-columns: 1fr; /* Stack them on top of each other on very small screens */
+    }
+  }
+  

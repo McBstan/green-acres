@@ -35,6 +35,27 @@
   .fa-play-circle {
     margin-left: 4px;
   }
+
+  .buttonOutline {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    background-color: transparent;
+    padding: 20px 26px;
+    font-size: 20px;
+    border-radius: 0;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color */
+  }
+  
+  .buttonOutline:hover {
+    transition: all 0.3s ease-out;
+    background: var(--primary);
+    color: #242424;
+  }
+  
+  /* You may also want to add active state styles for when the button is clicked */
+  .buttonOutline:active {
+    background-color: #e6e6e6; /* Light grey to indicate the button is pressed */
+  }
   
   @media screen and (max-width: 960px) {
     .heroContainer > h1 {
