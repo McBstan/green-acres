@@ -58,6 +58,16 @@ function Navbar() {
                             About Us
                         </Link>
                     </li>
+                    <li className={`${styles.navLinks} ${styles.desktopOnly}`}>
+                        <Link href = 'https://clienthub.getjobber.com/client_hubs/63a1eb07-1b81-43e0-b71f-81e05ca2e88e/login/new?source=share_login' onClick={closeMobileMenu}>
+                            My Quotes
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href = 'https://clienthub.getjobber.com/client_hubs/63a1eb07-1b81-43e0-b71f-81e05ca2e88e/login/new?source=share_login' className={styles.navLinksMobile} onClick={closeMobileMenu}>
+                            View Invoice
+                        </Link>
+                    </li>
                     <li>
                         <Link href='/signup' className={styles.navLinksMobile} onClick={closeMobileMenu}>
                             Request Quote

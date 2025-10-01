@@ -5,8 +5,8 @@ class MyDocument extends Document {
     return (
         <Html lang="en">
         <Head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+        
         <meta name="theme-color" content="#000000" />
 
         <meta name="description" content="GreenAcres Yardcare in Franklin, TN offers professional lawn care, landscaping services, and christmas lights. We are your trusted partner for maintaining a beautiful and healthy yard. Contact us today for expert lawn care solutions."/>

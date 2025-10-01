@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }) {
     
     <ChakraProvider>
       <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>GreenAcres Yardcare - Franklin, TN | Lawn Care and Landscaping Services</title>
       </Head>
       <Navbar />
