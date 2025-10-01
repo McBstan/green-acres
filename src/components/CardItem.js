@@ -9,9 +9,13 @@ function CardItem(props) {
       <Link href={props.path} className={styles.cardsItemLink}>
           <figure className={styles.cardsItemPicWrap} data-category={props.label}>
             <Image 
-              className={styles.cardsItemImg}
-              alt='Images'
               src={props.src}
+              alt={props.label}
+              fill
+              sizes="(max-width: 640px) 100vw,
+                     (max-width: 1024px) 50vw,
+                     33vw"
+              className={styles.cardsItemImg}
             />
           </figure>
           <div className={styles.cardsItemInfo}>
